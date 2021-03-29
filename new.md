@@ -5,5 +5,8 @@
      + `if(process.browser)`判断是否为客户端
      + `process.env`包含着关于系统环境的信息
         + `process.env.NODE_ENV`用户自定义变量，用来判断当前是开发环境还是生产环境
+### 运算符
 + ??判断符号
     + `process.env.NODE_ENV ?? 'development'`,判断问号前值是否为空，为空赋予后面的值，不为空跳过，取原来变量值
++ ?. 可选链操作符
+    + 允许读取位于连接对象链深处的属性的值，当引用为空不报错，返回undefined
