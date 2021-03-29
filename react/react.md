@@ -1,10 +1,14 @@
-### Date()对象的方法
+### react 基本使用方法
 
-- new Date().toLocaleDateString() 将 date 对象的日期部分转换为字符串--->2021/3/25
+- 在 react 中，父组件向子组件传参数在父组件的子组件标签中，使用属性向子组件传值，<child value={i} />,在子组件中，使用 props 接收这个值，以{this.props.value}使用传入的参数
 
-* new Date().toLocaleTimeString() 将 date 对象的时间部分转换为字符串--->下午 2：31：20
+* 在组件中的构造函数中，必须以 super(props)开头，"this.state={value:null}"存放数据，在方法中以 this.setState({value:"X"})来修改 state 中的值
 
-### react
+## react 知识点
+
+- npx create-react-app my-app 创建一个新的 react 项目
+
+* 一个 jsx 标签内没有内容，可以使用/来闭合<squares />
 
 - react 函数组件定义的两种方式
   - `const Example=(props)=>{ retrun <div/>}`
@@ -56,13 +60,3 @@
   * 像事件函数传递参数,删除某行
     - `onClick={(e)=>this.handleClick(id,e)}`
     - `onClick={this.handleClick.bind(this,id)}`,事件对象隐式传递
-
-### 逻辑运算符
-
-- 表达式 1 && 表达式 2
-  - 表达式 1 结果为 true，返回表达式 2
-  * 表达式 1 结果为 false，返回表达式 1
-
-* 表达式 1 || 表达式 2
-  - 表达式 1 结果为 true，返回表达式 1
-  * 表达式 1 结果为 false，返回表达式 2
